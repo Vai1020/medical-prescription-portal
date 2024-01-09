@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <style>
+        .main {
+            border: 1px solid lightgrey;
+            width: 50%;
+            margin-left: 365px;
+            padding: 6px;
+            margin-top: 60px;
+        }
+
+        .head {
+            border: 1px solid lightgrey;
+            width: 95%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .head2 {
+            background-color: lightcoral;
+            color: black;
+            width: 95%;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        body {
+            font-family: system-ui;
+        }
+
+        h2 {
+            margin-left: 7px;
+            color: cornflowerblue;
+        }
+
+        .cont {
+            margin-left: 10px;
+        }
+
+        .items {
+            width: 96%;
+            height: 21px;
+        }
+
+        #btn {
+            width: 19%;
+            margin-left: 10px;
+            margin-top: 15px;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 3px;
+            height: 31px;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            margin-top: 15px;
+            margin-left: 9px;
+        }
+
+        h4 {
+            margin-left: 10px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="/login" method="post">
+            {% csrf_token %}
+            <div class="head">
+                <h2>LOGIN</h2>
+            </div>
+            {% if error%}
+            <div class="head2">
+                <h4>{{error}}</h4>
+            </div>
+            {% endif %}
+            <div class="cont">
+                <p>Email Id</p>
+                <input type="mail" name="email" placeholder="Enter your email" class="items" required>
+            </div>
+            <div class="cont">
+                <p>Enter Password</p>
+                <input type="password" name="password" placeholder="Enter your password" required class="items">
+            </div>
+            <div><input type="submit" name="submit" value="login" class="items" id="btn"></div></form>
+            <div><a href="/registration" style="text-decoration: none;"><button>Create an account</button></a></div>
+    </div>
+</body>
+
+</html>

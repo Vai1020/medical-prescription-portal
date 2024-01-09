@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>history</title>
+        <style>
+            td {
+    text-align: center;
+    background-color: white;
+    height: 30px;
+}
+thead {
+    background-color: steelblue;
+    color: white;
+    height: 35px;
+}
+ body{
+    font-family: system-ui;
+ }           
+        </style>
+    </head>
+    <body>
+        <table class="table" border="1" cellspacing="0" cellpadding="0" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Sno.</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>DATE</th>
+                    <th>AGE</th>
+                    <th>GENDER</th>
+                    <th>ALLERGY</th>
+                    <th>MEDICINES</th>
+                    <th>TIMMING</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entries in entries %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{entries.name}}</td>
+                    <td>{{entries.email}}</td>
+                    <td>{{entries.date}}</td>
+                    <td>{{entries.age}}</td>
+                    <td>{{entries.gender}}</td>
+                    <td>{{entries.allergy}}</td>
+                    <td>{{entries.medic}}</td>
+                    <td>{{entries.time}}</td>
+                    <td>{{entries.desc}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

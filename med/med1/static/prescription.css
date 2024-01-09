@@ -1,0 +1,50 @@
+body{
+    font-family: system-ui;
+    background-image: url("images2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 231px;
+}
+.items {
+    padding: 8px;
+    margin: 15px;
+    width: 71%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.heading{
+    color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui;
+    font-size: 23px;
+    margin-left: -12px;
+}
+p{
+    margin-top: -20px;
+}
+img{
+    width: 20%;
+}
+#gender{
+    border: none;
+}
+#btn{
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    width: 85px;
+}
+.button{
+    display: flex;
+}

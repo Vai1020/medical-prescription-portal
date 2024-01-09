@@ -1,0 +1,286 @@
+*{
+    font-family: sans-serif
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.items{
+    display: flex;
+    align-items: center;
+}
+.navitem{
+    padding: 10px;
+    margin: 10px;
+}
+button{
+    padding: 10px;
+    background-color: steelblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.name{
+    padding: 10px;
+    margin: 10px;
+}
+.thirh1{
+    font-size: 20px;
+    color: cornflowerblue;
+}
+#head{
+    margin-top: 35px;
+}
+.thrih2{
+    font-size: 40px;
+    margin-top: 5px;
+}
+.main{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    height: 670px;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin-left: 110px;
+    align-items: baseline;
+    margin-top: 83px;
+}
+.img1{
+    margin-top: 30px;
+    height: 640px;
+    width: 640px;
+    margin-left: 50px;
+}
+
+.one{
+    margin-top: -6px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-stretch: expanded;
+    font-family: system-ui;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.secin{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    height: 290px;
+    margin-top: -110px;
+}
+.cont{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.btn1{
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.head1{
+    margin-top: -20px;
+    font-size: 30px;
+    color: white;
+}
+.para{
+    color: white;
+    margin-top: -20px;
+}
+.head{
+    margin-top: 35px;
+    font-size: 20px;
+    color: white;
+}
+.third{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.thircont,.thircont2{
+    display: flex;
+    flex-direction: column;
+}
+.thircont{
+    flex-basis: 780px;
+    align-items: center;
+}
+.thircont2{
+    width: 60%;
+    margin-top: 70px;
+}
+.thirp{
+    font-weight: lighter;
+    font-stretch: expanded;
+    font-family: system-ui;
+    margin-top: -20px;
+    font-size: 20px;
+}
+.fourcounth{
+    font-size: 48px;
+}
+.fourcountp{
+    font-family: system-ui;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: -70px;
+}
+.fourth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.incont {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 284px;
+    width: 284px;
+    box-shadow: 1px 1px 3px 3px lightgrey;
+    float: left;
+    margin: 25px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0% {
+        left: 0px;
+    }
+
+    20% {
+        left: 0px;
+    }
+
+    25% {
+        left: 0px;
+    }
+
+    45% {
+        left: 0px;
+    }
+
+    60% {
+        left: -1340px;
+    }
+
+    80% {
+        left: -1340px;
+    }
+
+    85% {
+        left: -1340px;
+    }
+
+    95% {
+        left: -1340px
+    }
+
+    100% {
+        left: -1340px;
+    }
+}
+
+.fourthmain {
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+
+.icon {
+    margin-top: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: steelblue;
+    border-radius: 50px;
+
+}
+
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 16px;
+    margin-top: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.fourth2 {
+    width: 205%;
+    height: 334px;
+}
+
+.innerhead {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui;
+    color: darkslateblue;
+}
+
+.innercont {
+    font-family: system-ui;
+    font-weight: lighter;
+    text-align: center;
+}
+.fifth{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.fifcon,.sixcon{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 540px;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+#fifh{
+    font-size: 20px;
+    color: cornflowerblue;
+    margin-bottom: -25px;
+}
+#fifh1,#sixh1{
+    font-size: 40px;
+}
+#fifp,#sixp{
+    margin-top: -20px;
+    font-family: system-ui;
+    font-weight: 100;
+}
+li{
+    font-family: system-ui;
+    font-weight: 100;
+}
+.fifconin,sixconin{
+    display: flex;
+    flex-direction: row;
+}
+.six{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.imgsix{
+    height: 480px;
+    width: 420px;
+    margin-left: 135px;
+}

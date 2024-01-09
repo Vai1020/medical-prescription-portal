@@ -1,0 +1,45 @@
+body{
+    font-family: system-ui;
+    background-color: whitesmoke;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 55%;
+    border-radius: 10px;
+    margin-left: 300px;
+    box-shadow: 0px 2px 3px 3px lightgrey;
+    background-color: white;
+}
+.items {
+    padding: 8px;
+    margin: 15px;
+    width: 71%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+div{
+    font-family: system-ui;
+    font-size: 27px;
+    margin-left: -57px;
+}
+error-message{
+    color: darkred;
+    width: 214%;
+    margin-left: -117px;
+    background-color: lightsalmon;
+}
+#btn{
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    width: 15%;
+    color: white;
+}
+hr{
+    width: 298%;
+    margin-left: -215px;
+}

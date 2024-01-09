@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>medical prescription portal</title>
+    <link rel="stylesheet" href="{% static "home.css" %}">
+    <script src="https://kit.fontawesome.com/6fd2e1f0f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="line" style="background-color:steelblue;width: 1335px; height: 25px;"></div>
+    <div class="navbar">
+        <div class="name"><strong style="font-family: sans-serif; font-size: 30px;">MED</strong><strong
+                style="font-family: sans-serif; color:darkblue; font-size: 30px;">SERVICE</strong></div>
+        <div class="items">
+            <div class="navitem">HOME</div>
+            <div class="navitem">ABOUT US</div>
+            <div class="navitem">CONTACT</div>
+            <div class="navitem"><a href="/prescription" style="text-decoration: none; color: black;">PRESCRIBE</a></div>
+            {% if name %}
+            <div class="navitem"><button><a href="/logout" style="text-decoration: none; color: white;">LOGOUT</a></button></div>
+            {% else %}
+            <div class="navitem"><button><a href="/login" style="text-decoration: none; color: white;">LOGIN</a></button></div>
+            {% endif %}
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="first">
+            <div class="inner">
+                <h5 style="color: steelblue;
+                    font-size: larger;">WELCOME TO OUR CLINIC</h5>
+                <h1 style="color: steelblue;
+                    font-size: 60px;
+                    font-weight: 700;
+                    margin-top: -1px;">TAKE CARE OF YOUR HEALTH</h1>
+                <p class="one">Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis placerat
+                    eugiat mauris ipsum in viverra tortor and gravida purus pretium lorem primis in orci integer mollis
+                </p>
+                <button class="btn" style="margin-top: 10px;">More about clinic</button>
+            </div>
+            <img src="{% static "imgmed.png" %}" alt="" class="img1">
+        </div>
+    </div>
+    <div class="sec">
+        <div class="secin" style="background-color: lightskyblue;" id="one">
+            <div class="cont">
+                <h5 class="head1" id="head">Working Time</h5>
+                <div>
+                    <p class="para">Mon-Wed- 9:00 AM - 7:00 PM</p>
+                </div>
+                <div>
+                    <p>Thursday- 9:00 AM - 6:30 PM</p>
+                </div>
+                <div>
+                    <p>Friday- 9:00 AM - 6:00 PM</p>
+                </div>
+                <div>
+                    <p>Sat-Sun- Closed
+                </div>
+            </div>
+        </div>
+        <div class="secin" style="background-color: dodgerblue;" id="two">
+            <div class="cont">
+                <h5 class="head1"  id="head">Doctors Timetable</h5>
+                <p class="para">An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum vitae a purus
+                    primis ipsum magna ipsum</p>
+                    <button class="btn1">View Timetable</button>
+            </div>
+        </div>
+        <div class="secin" style="background-color: royalblue;" id="three">
+            <div class="cont">
+                <h5 class="head" style="margin-top: 35px;">24 Hour Service</h5>
+                <h5 class="head1">HIGHEST QUALITY CARE</h5>
+                <p class="para">An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum vitae a purus
+                    primis ipsum magna ipsum</p>
+            </div></div>
+            <div class="secin" style="background-color: mediumblue;" id="four">
+                <div class="cont">
+                    <h5 class="head">Here For You</h5>
+                    <h5 class="head1">EMERGENCY DEPARTMENT</h5>
+                    <p class="para">An magnis nulla dolor at sapien augue erat iaculis purus tempor magna ipsum vitae a
+                        purus primis ipsum magna ipsum</p>
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <img src="{% static "imagemed2.png" %}" alt="">
+            <div class="thircont">
+                <div class="thircont2">
+                <h5  class="thirh1">WELCOME TO MEDSERVICE</h5>
+                <h5 class="thrih2">Complete Medical Solutions in One Place</h5>    
+                <p  class="thirp">Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat dolor lacinia cubilia curae integer congue leo metus, eu mollislorem primis in orci integer metus mollis faucibus. An enim nullam tempor sapien gravida donec pretium and ipsum porta justo integer at velna vitae auctor integer congue</p>
+            <p>Randon Pexon, Head of Clinic</p>
+            </div>
+            </div>
+        </div>
+        <div class="fourthmain">
+        <div class="fourth">
+            <div class="fourcont"><h5 class="fourcounth">Total Health Care Solutions</h5></div>
+            <div class="fourcont"><p class="fourcountp">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat</p></div>
+        </div>
+            <div class="fourth2"><div class="incont">
+                <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+                <div class="innerhead">PEDIATRICS</div>
+                <p class="innercont">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fuga error necessitatibus?</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+                <div class="innerhead">
+                    NEUROLOGY
+                </div>
+                <p class="innercont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio id deleniti ad!</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                <div class="innerhead">HEMATOLOGY</div>
+                <p class="innercont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, repellat molestias. Aut.</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-lungs"></i></div>
+                <div class="innerhead">X-RAY DIAGNOSTIC</div>
+                <p class="innercont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempora itaque nemo.</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="innerhead">CARDIOLOGY</div>
+                <p class="innercont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam expedita aut!</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-bed-pulse"></i></div>
+                <div class="innerhead">MRI</div>
+                <p class="innercont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sapiente excepturi eligendi?</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-microscope"></i></div>
+                <div class="innerhead">LABORATORY SERVICES</div>
+                <p class="innercont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quibusdam molestias error.</p>
+            </div>
+            <div class="incont">
+                <div class="icon"><i class="fa-solid fa-truck-medical"></i></div>
+                <div class="innerhead">EMERGENCY HELP</div>
+                <p class="innercont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quibusdam eveniet aperiam!</p>
+            </div></div>
+        </div>
+        <div class="fifth">
+            <div class="fifcon"><h5 id="fifh">BEST PRACTICES</h5>
+                <h5 id="fifh1">Clinic with Innovative Approach to Treatment</h5>
+            <p id="fifp">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer congue magna at pretium purus pretium ligula rutrum itae laoreet augue posuere and curae integer congue leo metus mollis primis and mauris</p>
+        <div class="fifconin">
+            <ul>
+                <li>Nemo ipsam egestas volute and turpis dolores quaerat</li>
+                <li>Magna luctus tempor</li>
+                <li>An enim nullam tempor at pretium purus blandit</li>
+            </ul>
+            <ul>
+                <li>Magna luctus tempor blandit a vitae suscipit mollis</li>
+                <li>Nemo ipsam egestas volute turpis dolores quaerat</li>
+                <li>An enim nullam tempor</li>
+            </ul>
+        </div>    
+        </div>
+            <img src="{% static "imagemed3.png" %}" alt="">
+            </div>
+        </div>
+    <div class="six">
+        <img src="{% static "med4.jpg" %}" alt="" class="imgsix">
+        <div class="sixin">
+            <div class="sixcon">
+                <h5 id="sixh1">Prediactics</h5>
+            <p id="sixp">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer congue magna at pretium purus pretium ligula rutrum itae laoreet augue posuere and curae integer congue leo metus mollis primis and mauris</p>
+        <div class="sixconin">
+            <ul>
+                <li>Nemo ipsam egestas volute and turpis dolores quaerat</li>
+                <li>Magna luctus tempor</li>
+                <li>An enim nullam tempor at pretium purus blandit</li>
+            </ul>
+            <ul>
+                <li>Magna luctus tempor blandit a vitae suscipit mollis</li>
+                <li>Nemo ipsam egestas volute turpis dolores quaerat</li>
+                <li>An enim nullam tempor</li>
+            </ul>
+        </div>    
+    </div>
+</body>
+
+</html>

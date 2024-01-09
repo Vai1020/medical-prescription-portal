@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <style>
+        .main {
+            border: 1px solid lightgrey;
+            width: 50%;
+            margin-left: 365px;
+            padding: 6px;
+        }
+
+        .head {
+            border: 1px solid lightgrey;
+            width: 95%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        body{
+            font-family: system-ui;
+        }
+
+        h2 {
+            margin-left: 7px;
+            color:cornflowerblue;
+        }
+
+        .cont {
+            margin-left: 10px;
+        }
+
+        .items {
+            width: 96%;
+            height: 21px;
+        }
+
+        #btn {
+            width: 30%;
+            margin-left: 10px;
+            margin-top: 15px;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 3px;
+            height: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form action="/registration" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+        <div class="head">
+            <h2>CREATE AN ACCOUNT</h2>
+        </div>
+        <div class="cont">
+            <p>Name</p>
+            <input type="text" name="name" placeholder="Enter your name" class="items" required>
+        </div>
+        <div class="cont">
+            <p>Last Nmae</p>
+            <input type="text" name="last_name" placeholder="Enter your last name" class="items" required>
+        </div>
+        <div class="cont">
+            <p>Phone No</p>
+            <input type="number" name="phone" placeholder="Enter yout mobile no" class="items" required>
+        </div>
+        <div class="cont">
+            <p>Email Id</p>
+            <input type="mail" name="email" placeholder="Enter your email" class="items" required>
+        </div>
+        <div class="cont">
+            <p>Upload Certificate</p>
+            <input type="file" name="image" placeholder="Upload your certificate" required class="items"
+                style="border: none;">
+        </div>
+        <div class="cont">
+            <p>Enter Registration No</p>
+            <input type="number" name="regis_number" placeholder="Enter yout registration no" class="items" required>
+        </div>
+        <div class="cont">
+            <p>Enter Password</p>
+            <input type="password" name="password" placeholder="Enter your password" required class="items">
+        </div>
+        <div><input type="submit" name="submit" value="Create Account" class="items" id="btn"></div>
+        </form>
+    </div>
+</body>
+
+</html>

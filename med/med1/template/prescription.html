@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>prescription</title>
+    <link rel="stylesheet" href="{% static "prescription.css" %}">
+    </head>
+    <body>
+        <form action="/prescription" method="POST">
+            {% csrf_token %}
+            <div class="heading"><img src="{% static "logo4.png" %}" alt="">
+                
+                <div><h1>{{name1}}</h1>
+                <p>MBBS(MUMBAI)</p>
+            <P>REG NO:-{{regis_number}}</P></div></div>
+                <input type="text" name="name" id="hom" class="items" placeholder="Enter name">
+                <input type="email" name="email" id="bom" class="items" placeholder="Enter email id">
+                <input type="date" name="date"  id="gom" class="items">
+                <input type="number" name="age" id="mok" class="items" placeholder="enter age">
+                <div class="items" id="gender">
+                <input type="radio" name="gender" value="male">MALE
+                <input type="radio" name="gender" value="female">FEMALE
+                <input type="radio" name="gender" value="other">OTHER</div>
+                <input type="text" name="allergy" id="xox" class="items" placeholder="Enter Allergy">
+                <input type="text" name="medic" class="items" placeholder="Enter Medicines">
+                <input type="text" name="time" class="items" placeholder="Enter Timming">
+                <input type="text" name="desc" class="items" placeholder="Description">
+                 <div class="button"><input type="submit" name="submit" value="submit" id="btn" class="items" >
+                    <input type="reset" name="reset" value="reset" class="items" id="btn">
+                    <a href="/record" style="text-decoration: none; color: white;"><input type="button"  name="button" value="history" class="items" id="btn" ></a>
+   </div> </body>
+</html>

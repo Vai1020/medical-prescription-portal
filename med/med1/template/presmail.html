@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>prescmail</title>
+    <style>
+        .pres{
+                margin-left: 134px;
+    margin-top: 50px;
+            }
+            .heading{
+                display: flex;
+    border-bottom: 2px solid black;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="heading" style="display: flex;"><img src="{% static " logo4.png" %}" style="width: 10%;">
+            <div>
+                <h1>DR.ANUP KUMAR</h1>
+                <p>MBBS(MUMBAI)</p>
+                <P>REG NO:-2930651</P>
+            </div>
+        </div>
+        {% for entries in entries %}
+        {% if forloop.first %}
+        <div class="pres">NAME:-{{entries.name}}</div>
+        <div class="pres">EMAIL:-{{entries.email}}</div>
+        <div class="pres">AGE:-{{entries.age}}</div>
+        <div class="pres">GENDER:-{{entries.gender}}</div>
+        <div class="pres">ALLERGY:-{{entries.allergy}}</div>
+        <div class="pres">MEDICINES:-{{entries.medic}}
+        </div>
+        <div class="pres">TIMMING:-{{entries.time}}
+        </div>
+        <div class="pres">DESCRIPTION:-{{entries.desc}}</div>
+        {%endif%}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
