@@ -1,4 +1,4 @@
-Medical Prescription Portal Implemtation images
+# Medical Prescription Portal 
 
 ![medical](https://github.com/Vai1020/medical-prescription-portal/assets/102492742/c4f6c9c1-2fc9-47d3-9dd0-2d26efc8f6a6)
 ![medical2](https://github.com/Vai1020/medical-prescription-portal/assets/102492742/2793fc50-4a7d-445b-8ecb-d26905cde076)
